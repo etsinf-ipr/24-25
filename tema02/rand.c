@@ -3,7 +3,9 @@
 
 
 int main(){
-    printf("%d\n ", rand());
+    int a;
+    a = rand();
+    printf("Num aleatorio: %d\n ", a);
     return 0;
 } 
 
