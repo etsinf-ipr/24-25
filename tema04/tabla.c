@@ -15,7 +15,7 @@ int main(int argc, char *argv[] ){
 
     // imprime la tabla
     for(int i = 1; i <= 10; i++ )
-        printf("%d x %d = %d\n ", num, i, num * i);
+        printf("%2d x %2d = %2d\n", num, i, num * i);
 
 
     return 0;
