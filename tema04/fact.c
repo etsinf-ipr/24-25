@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-int main(int argc, char *argv[] ){
+int main( ){
     
     int num;
     // obtiene el número
@@ -12,7 +12,7 @@ int main(int argc, char *argv[] ){
 
     // calcula el factorial
     int fact = 1;
-    for( int i = 1; i <= num; i++)
+    for( int i = num; i >= 1; i--)
         fact *=i;
         //fact = fact * i;
 
