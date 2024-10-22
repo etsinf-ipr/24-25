@@ -27,7 +27,7 @@ int main(int argc, char *argv[] ){
     } 
 
     // para imprimir un double (un float largo) se emplea %lf
-    print("e = %lf\n ", e);
+    printf("e = %.15lf\n ", e);
 
     return 0;
 } 
