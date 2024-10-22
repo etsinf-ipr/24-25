@@ -38,13 +38,12 @@ int main () {
         } while(no_valida(hh, mm));
         //Pasa la hora a minutos
         int minutos = hh * 60 + mm;
+        //Actualiza la hora más temprana
+        if(minutos < min) min = minutos;
         //Si la hora es posterior a la actual
-        if(minutos > actual){
-            //Actualiza la hora más temprana
-            if(minutos < min) min = minutos;
+        if(minutos > actual)
             //Incrementa el contador de horas posteriores
             posteriores++;
-        }
     }
     //Imprime la hora más temprana
     printf("La hora más temprana es %02d:%02d\n", min / 60, min % 60);
