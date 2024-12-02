@@ -45,9 +45,13 @@ int main(){
 
     // calcula la diferencia en minutos
     int diferencia = minutos2 - minutos1;
+    int h = diferencia / 60;
+    int m = diferencia % 60;
 
     // la muestra en pantalla la diferencia
     printf("Diferencia: %d minutos\n", diferencia);
+    printf("Diferencia: %02d:%02d\n", h, m);
+
     
     return 0;
 } 
